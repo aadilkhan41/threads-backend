@@ -1,6 +1,5 @@
 const express = require("express");
 require("express-async-errors");
-const cors = require("cors");
 const connectDb = require("./db/connectDb");
 const cookieParser = require("cookie-parser");
 const userRouter = require("./routes/userRoutes");
