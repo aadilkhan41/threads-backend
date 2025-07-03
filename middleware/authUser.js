@@ -4,6 +4,7 @@ const User = require("../models/users");
 
 const authUser = async (req, res, next) => {
     const cookie = req.cookies;
+    console.log(cookie);
     const user = jwt.verify(cookie.jwt, JWT_SECRET);
     const isExistingUser = await User.findById(user.userId).select("-password");
     req.user = isExistingUser;
