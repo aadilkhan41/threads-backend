@@ -13,7 +13,7 @@ const generateToken = (userId, res) => {
         sameSite: "Strict"
     });
 
-    console.log('token set');
+    console.log(token);
     return token;
 }
 
