@@ -18,7 +18,7 @@ loginObject.required();
 
 const createPostObject = zod.object({
   postedBy: zod.string(),
-  text: zod.string().max(500),
+  text: zod.string().max(500).optional(),
 });
 
 createPostObject.required();
