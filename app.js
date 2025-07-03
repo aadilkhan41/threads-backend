@@ -9,10 +9,15 @@ const path = require("path");
 const errorHandler = require("./middleware/errorHandler");
 const {v2: cloudinary} =  require('cloudinary');
 const { CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDINARY_NAME } = require('./utils/config');
+const cors = require("cors");
 
 connectDb();
 
 const app = express();
+app.use(cors({
+    origin: "https://threads-frontend-navy.vercel.app",
+    credentials: true,
+}));
           
 cloudinary.config({ 
     cloud_name: CLOUDINARY_NAME, 
