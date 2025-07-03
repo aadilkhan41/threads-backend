@@ -104,7 +104,7 @@
   "email": "new@example.com",
   "password": "Updated123",
   "bio": "New bio",
-  "profilePic": "data:image/png;base64,..."
+  "profilePic": "https://cloudinary.com/...png"
 }
 ```
 
@@ -165,7 +165,7 @@
 {
   "postedBy": "userId",
   "text": "My first post!",
-  "img": "data:image/jpeg;base64,..."
+  "img": "https://cloudinary.com/...png"
 }
 ```
 
