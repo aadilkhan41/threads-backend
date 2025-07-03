@@ -2,6 +2,9 @@
 
 ## 📂 User Routes
 
+## Base URL
+`https://threads-backend-tp0d.onrender.com`
+
 ### 📝 Register User
 **POST** `/api/users/signup`
 
