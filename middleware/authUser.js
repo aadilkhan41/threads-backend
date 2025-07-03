@@ -5,6 +5,7 @@ const User = require("../models/users");
 const authUser = async (req, res, next) => {
 	try {
 		const token = req.cookies?.jwt;
+        console.log("Cookies received from frontend:", req.cookies);
 
 		if (!token) {
 			return res.status(401).json({ message: "No token. Unauthorized access." });
